@@ -3,7 +3,6 @@ from tkinter import ttk, messagebox
 import tkinter.scrolledtext as st
 from urllib.request import urlopen as req
 from bs4 import BeautifulSoup as soup
-import wikipedia
 from threading import Thread
 
 v_progress = 0
@@ -141,7 +140,7 @@ BTrans.pack(ipadx=30,ipady=15)
 v_result = StringVar()
 v_result.set('< --- Result --- >')
 
-content = wikipedia.summary('python programming')
-maintext.insert(INSERT,content)
+# content = wikipedia.summary('python programming')
+# maintext.insert(INSERT,content)
 
 GUI.mainloop()
